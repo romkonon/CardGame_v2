@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox>
+         <children>
+            <FlowPane fx:id="controls">
+               <children>
+                  <Button fx:id="redraw" mnemonicParsing="false" text="redraw" />
+                  <Button mnemonicParsing="false" text="temp1" />
+                  <Button mnemonicParsing="false" text="temp2" />
+               </children>
+            </FlowPane>
+            <GridPane fx:id="field" alignment="CENTER" gridLinesVisible="true" minHeight="420.0" minWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <FlowPane fx:id="hand" columnHalignment="CENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
